@@ -1,0 +1,12 @@
+ 
+  let oneOrg = pAequorFactory(1, mockUpStrand());
+  let secondOrg = pAequorFactory(2, mockUpStrand());
+  process.stdout.write(`First DNA Strand: ${oneOrg.dna}\n`);
+  process.stdout.write(`${oneOrg.mutate()}\n`);
+  process.stdout.write(`Second DNA Strand: ${secondOrg.dna}\n`);
+  process.stdout.write(`${secondOrg.mutate()}\n`);
+  oneOrg.compareDNA(secondOrg);
+  process.stdout.write('\n');
+  oneOrg.willLikelySurvive(); 
+  
+  
